@@ -1,0 +1,116 @@
+#service .service-hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/pexels-matilda-wormwood-4101039.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50%;
+  position: relative;
+}
+
+#service .service-hero h1 {
+  font-size: 5rem;
+  margin-bottom: 0;
+  margin-top: 0;
+  text-shadow: -2px 3px 2px rgba(0, 0, 0, 0.34);
+}
+
+#service .service-hero .service-text {
+  color: #ffffff;
+  text-align: center;
+  padding: 3rem;
+}
+
+#service .service-content .grid-even-columns {
+  display: grid;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+@media (min-width: 40em) {
+  #service .service-content .grid-even-columns {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 60em) {
+  #service .service-content .grid-even-columns {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+#service .service-content .grid-even-columns .flow h1 {
+  text-align: center;
+  white-space: nowrap;
+}
+
+#service .service-content .grid-even-columns .flow img {
+  width: auto;
+  height: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#service .service-hero .hamburger-menu {
+  float: left;
+}
+
+#service .menu {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s;
+}
+
+#service .menu a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+#service .menu a:hover {
+  color: #b3d4fc;
+}
+
+#service .menu .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#service .openbtn {
+  font-size: 2rem;
+  cursor: pointer;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  transition: 0.3s;
+}
+
+#service .openbtn:hover {
+  color: #b3d4fc;
+}
+
+.card {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 13px 13px 13px 13px;
+  -webkit-border-radius: 13px 13px 13px 13px;
+  -moz-border-radius: 13px 13px 13px 13px;
+
+  /*Box shadow*/
+  box-shadow: -1px 4px 7px 1px rgba(0, 0, 0, 0.13);
+  -webkit-box-shadow: -1px 4px 7px 1px rgba(0, 0, 0, 0.13);
+  -moz-box-shadow: -1px 4px 7px 1px rgba(0, 0, 0, 0.13);
+}

@@ -1,0 +1,73 @@
+#contact #contact-hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/pexels-matilda-wormwood-4101033.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50%;
+  position: relative;
+}
+
+#contact h1 {
+  font-size: 5rem;
+  margin-bottom: 0;
+  margin-top: 0;
+  text-shadow: -2px 3px 2px rgba(0, 0, 0, 0.34);
+}
+
+#contact #contact-hero .contact-text {
+  color: #ffffff;
+  text-align: center;
+  padding: 3rem;
+}
+
+#contact #contact-hero .hamburger-menu {
+  float: left;
+}
+
+#contact .menu {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s;
+}
+
+#contact .menu a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+#contact .menu a:hover {
+  color: #b3d4fc;
+}
+
+#contact .menu .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#contact .openbtn {
+  font-size: 2rem;
+  cursor: pointer;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  transition: 0.3s;
+}
+
+#contact .openbtn:hover {
+  color: #b3d4fc;
+}
