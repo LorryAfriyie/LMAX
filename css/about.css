@@ -90,7 +90,6 @@
 #about .about-content .grid-even-columns {
   display: grid;
   gap: 2rem;
-  grid-template-columns: repeat(2, 1fr);
 }
 
 #about .about-content .grid-even-columns .flow img {
@@ -110,4 +109,10 @@
   box-shadow: -1px 4px 7px 1px rgba(0, 0, 0, 0.13);
   -webkit-box-shadow: -1px 4px 7px 1px rgba(0, 0, 0, 0.13);
   -moz-box-shadow: -1px 4px 7px 1px rgba(0, 0, 0, 0.13);
+}
+
+@media (min-width: 40em) {
+  #about .about-content .grid-even-columns {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }

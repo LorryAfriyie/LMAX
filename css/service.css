@@ -24,19 +24,24 @@
 #service .service-content .grid-even-columns {
   display: grid;
   gap: 2rem;
+}
+
+#service .service-content {
   padding: 1rem;
 }
 
-@media (min-width: 40em) {
-  #service .service-content .grid-even-columns {
-    grid-template-columns: repeat(2, 1fr);
-  }
+.card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+
+  /*Box shadow*/
+  box-shadow: -1px 4px 7px 1px rgba(0, 0, 0, 0.13);
+  -webkit-box-shadow: -1px 4px 7px 1px rgba(0, 0, 0, 0.13);
+  -moz-box-shadow: -1px 4px 7px 1px rgba(0, 0, 0, 0.13);
 }
 
-@media (min-width: 60em) {
-  #service .service-content .grid-even-columns {
-    grid-template-columns: repeat(3, 1fr);
-  }
+.card > .card-body > h1 {
+  font-size: 1.5rem;
 }
 
 #service .service-content .grid-even-columns .flow h1 {
@@ -51,12 +56,25 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+@media (min-width: 40em) {
+  #service .service-content .grid-even-columns {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 60em) {
+  #service .service-content .grid-even-columns {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 #service .service-hero .hamburger-menu {
   float: left;
 }
 
 #service .menu {
-  height: 100%; /* 100% Full-height */
+  height: 100dvh; /* 100% Full-height */
   width: 0; /* 0 width - change this with JavaScript */
   position: fixed; /* Stay in place */
   z-index: 1; /* Stay on top */
@@ -100,17 +118,4 @@
 
 #service .openbtn:hover {
   color: #b3d4fc;
-}
-
-.card {
-  border: 1px solid #ccc;
-  padding: 1rem;
-  border-radius: 13px 13px 13px 13px;
-  -webkit-border-radius: 13px 13px 13px 13px;
-  -moz-border-radius: 13px 13px 13px 13px;
-
-  /*Box shadow*/
-  box-shadow: -1px 4px 7px 1px rgba(0, 0, 0, 0.13);
-  -webkit-box-shadow: -1px 4px 7px 1px rgba(0, 0, 0, 0.13);
-  -moz-box-shadow: -1px 4px 7px 1px rgba(0, 0, 0, 0.13);
 }
